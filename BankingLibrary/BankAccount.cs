@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Humanizer;
 
 namespace BankingLibrary
 {
@@ -16,6 +17,11 @@ namespace BankingLibrary
                     balence += item.Amount;
                 }
                 return balence;
+            }
+        }
+        public string BalanceForHuman { 
+            get {
+                return ((int)Balance).ToWords();  
             }
         }
         public List<Transaction> AllTransaction = new List<Transaction>();

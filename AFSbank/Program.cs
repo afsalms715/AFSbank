@@ -73,7 +73,7 @@ namespace AFSbank
                             }
                         }
                     }
-                    else if (userOption == 6)
+                    else if (userOption == 6)//geing Account Balence
                     {
                         Console.WriteLine("Enter Account Number:");
                         int ACnumber = int.Parse(Console.ReadLine());
@@ -83,6 +83,7 @@ namespace AFSbank
                             {
                                 Console.WriteLine($"Account Name:{item.AccountOBJ.name}");
                                 Console.WriteLine($"Account Balence:{item.AccountOBJ.Balance}");
+                                Console.WriteLine($"Account Balence in Word:{item.AccountOBJ.BalanceForHuman}");
                             }
                             else
                             {
