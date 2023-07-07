@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AFSbank
+namespace BankingLibrary
 {
-    class BankAccount
+    public class BankAccount
     {
         public string name { get; set; }
         public int accountNumber { get; set; }

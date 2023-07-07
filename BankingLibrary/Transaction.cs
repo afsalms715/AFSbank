@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AFSbank
+namespace BankingLibrary
 {
-    class Transaction
+    public class Transaction
     {
         public decimal Amount { get; set; }
         public DateTime Date { get; set; }
